@@ -70,7 +70,7 @@
     "modernizr": "3.5.0",
     "normalize.css": "7.0.0",
     "offline-plugin": "4.8.3",
-    "pretty-error": "2.1.1",    
+    "pretty-error": "2.1.1",
     "prop-types": "15.5.10",
     "react": "15.6.1",
     "react-async-bootstrapper": "1.1.1",
@@ -81,6 +81,7 @@
     "react-redux": "5.0.6",
     "react-router-dom": "4.1.2",
     "redux": "3.7.2",
+    "redux-logger": "3.0.6",
     "redux-thunk": "2.2.0",
     "serialize-javascript": "1.4.0",
     "uuid": "3.1.0"

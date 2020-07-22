@@ -16,6 +16,9 @@ function Menu() {
       <li>
         <Link to="/about">About</Link>
       </li>
+      <li>
+        <Link to="/auth">Iniciar Sesión</Link>
+      </li>
     </ul>
   );
 }

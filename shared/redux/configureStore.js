@@ -2,8 +2,10 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import axios from 'axios';
 import reducer from '../reducers';
+import { createLogger } from 'redux-logger'
 
 function configureStore(initialState) {
+  const logger = createLogger()
   const enhancers = compose(
     // Middleware store enhancer.
     applyMiddleware(
@@ -12,6 +14,7 @@ function configureStore(initialState) {
       // preconfigured axios instance which can be used to fetch data with.
       // @see https://github.com/gaearon/redux-thunk
       thunk.withExtraArgument({ axios }),
+      logger
     ),
     // Redux Dev Tools store enhancer.
     // @see https://github.com/zalmoxisus/redux-devtools-extension

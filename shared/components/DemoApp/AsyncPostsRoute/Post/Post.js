@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import * as PostActions from '../../../../actions/posts';
 import * as FromState from '../../../../reducers';
 
-export function Post({ post }) {
+function Post({ post }) {
   if (!post) {
     // Post hasn't been fetched yet. It would be better if we had a "status"
     // reducer attached to our posts which gave us a bit more insight, such
